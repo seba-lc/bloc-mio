@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 class Note {
   constructor(creator, content, id) {
     this.creator = creator;
@@ -57,4 +58,16 @@ const addNote = (event) => {
   console.log(noteContainer);
   containerBox.appendChild(noteContainer);
 }
+=======
+const noteExample = document.getElementById('note-ex');
+const noteContent = document.getElementById('note-content');
+
+const typing = () => {
+  noteExample.innerText = `${noteContent.value}`
+
+  if(noteContent.value === ''){
+    noteExample.innerText = 'Escriba una nota ...'
+  }
+};
+>>>>>>> develop
 
