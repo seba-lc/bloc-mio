@@ -13,9 +13,12 @@ const noteContent = document.getElementById('note-content');
 
 let notes = [];
 
+let userLogged = JSON.parse(localStorage.getItem('userLogged'));
+
 if(localStorage.getItem('notes') !== null){
   notes = JSON.parse(localStorage.getItem('notes'))
-  notes.forEach(note => {
+  let userNotes = notes.filter(note => note.creator == userLogged.nombre);
+  userNotes.forEach(note => {
     let noteContainer = document.createElement('div');
     noteContainer.innerHTML = `
     <div class="d-flex justify-content-between bg-transparent">
@@ -37,7 +40,7 @@ if(localStorage.getItem('notes') !== null){
 const addNote = (event) => {
   event.preventDefault();
   let noteContent = document.getElementById("note-content").value;
-  let newNote = new Note ('Seba', noteContent, notes.length+1);
+  let newNote = new Note (userLogged.nombre, noteContent, notes.length+1);
   notes.push(newNote);
 
   let notesLS = JSON.stringify(notes);
