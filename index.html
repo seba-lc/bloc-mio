@@ -20,14 +20,14 @@
     <section>
       <div class="row container-fluid py-3">
         <div class="col-4 d-flex flex-column justify-content-center align-items-center">
-          <form onsubmit="" class="d-flex flex-column justify-content-center align-items-center">
+          <form onsubmit="addNote(event)" class="d-flex flex-column justify-content-center align-items-center" id="note-form">
             <label class="form-label">Ingrese su nota</label>
-            <textarea class="form-control" id="" cols="45" rows="8"></textarea>
+            <textarea class="form-control" id="note-content" cols="45" rows="8"></textarea>
             <button type="submit" class="btn btn-dark mt-3">Crear Nota</button>
           </form>
           <div class="note-style mt-4 d-flex justify-content-center align-items-center">Escriba una nota ...</div>
         </div>
-        <div class="col-8 corcho"></div>
+        <div class="col-8 corcho" id="container-box"></div>
       </div>
     </section>
     <script
@@ -38,3 +38,4 @@
     <script src="js/app.js"></script>
   </body>
 </html>
+
