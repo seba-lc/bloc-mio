@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(219, 217, 217);
+}
+.note-style{
+  background-color: #8EFB23;
+  width: 300px;
+  height: 250px;
+  -webkit-box-shadow: 5px 3px 8px 1px rgba(0,0,0,0.65); 
+  box-shadow: 5px 3px 8px 1px rgba(0,0,0,0.65);
+  font-family: 'Oooh Baby', cursive;
+  font-size: 25px;
+}
+.corcho{
+  background-image: url('../assets/img/corcho.webp');
+  background-repeat: repeat;
+  background-size: contain;
+  border-radius: 20px;
+}
+body{
+  background-color: rgb(219, 217, 217);
+}
