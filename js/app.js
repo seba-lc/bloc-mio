@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 class Note {
   constructor(creator, content, id) {
     this.creator = creator;
@@ -21,7 +20,7 @@ if(localStorage.getItem('notes') !== null){
       <img class="m-1 bg-transparent" src="../assets/img/chinche.png" width="30px" height="30px" alt="chinche">
       <button class="m-1 btn btn-danger px-1">X</button>
     </div>
-    <div class="bg-transparent d-flex justify-content-center align-items-center">${note.content}</div>
+    <div class="px-2 bg-transparent d-flex justify-content-center align-items-center">${note.content}</div>
     <div class="date-style bg-transparent text-center">${note.date}</div>
     `;
     noteContainer.classList.add('note-style', 'm-2', 'd-flex', 'flex-column', 'justify-content-between');
@@ -50,15 +49,14 @@ const addNote = (event) => {
     <img class="m-1 bg-transparent" src="../assets/img/chinche.png" width="30px" height="30px" alt="chinche">
     <button class="m-1 btn btn-danger px-1">X</button>
   </div>
-  <div class="bg-transparent d-flex justify-content-center align-items-center">${noteContent}</div>
+  <div class="px-2 bg-transparent d-flex justify-content-center align-items-center">${noteContent}</div>
   <div class="date-style bg-transparent text-center">${newNote.date}</div>
   `;
   noteContainer.classList.add('note-style', 'm-2', 'd-flex', 'flex-column', 'justify-content-between');
   noteContainer.setAttribute('id', `${newNote.id}`);
-  console.log(noteContainer);
   containerBox.appendChild(noteContainer);
 }
-=======
+
 const noteExample = document.getElementById('note-ex');
 const noteContent = document.getElementById('note-content');
 
@@ -69,5 +67,4 @@ const typing = () => {
     noteExample.innerText = 'Escriba una nota ...'
   }
 };
->>>>>>> develop
 
