@@ -7,7 +7,9 @@ class Note {
   }
 }
 
-let containerBox = document.getElementById('container-box')
+let containerBox = document.getElementById('container-box');
+const noteExample = document.getElementById('note-ex');
+const noteContent = document.getElementById('note-content');
 
 let notes = [];
 
@@ -55,10 +57,10 @@ const addNote = (event) => {
   noteContainer.classList.add('note-style', 'm-2', 'd-flex', 'flex-column', 'justify-content-between');
   noteContainer.setAttribute('id', `${newNote.id}`);
   containerBox.appendChild(noteContainer);
+
+  noteExample.innerText = "Escriba una nota ..."
 }
 
-const noteExample = document.getElementById('note-ex');
-const noteContent = document.getElementById('note-content');
 
 const typing = () => {
   noteExample.innerText = `${noteContent.value}`
@@ -75,6 +77,5 @@ const deleteNote = (event) => {
   let notes = JSON.parse(localStorage.getItem('notes'));
   notes = notes.filter(note => note.id != noteToDelete.id);
   localStorage.setItem('notes', JSON.stringify(notes));
-  console.log(notes);
 }
 
