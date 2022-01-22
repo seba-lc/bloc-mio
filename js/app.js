@@ -61,7 +61,6 @@ const addNote = (event) => {
   noteExample.innerText = "Escriba una nota ..."
 }
 
-
 const typing = () => {
   noteExample.innerText = `${noteContent.value}`
 
