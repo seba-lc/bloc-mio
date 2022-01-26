@@ -11,5 +11,30 @@
       "password": "User1234"
     }
   ],
-  "userLogged":{}
+  "notes": [
+    {
+      "creator": "Administrador",
+      "content": "ahora si vas a andar bien manga de gato",
+      "date": "Wed Jan 26 2022",
+      "id": 11
+    },
+    {
+      "creator": "Administrador",
+      "content": "jaja",
+      "date": "Wed Jan 26 2022",
+      "id": 12
+    },
+    {
+      "creator": "User",
+      "content": "si me parece que ya estamos andando bien REY",
+      "date": "Wed Jan 26 2022",
+      "id": 14
+    }
+  ],
+  "contador": [
+    {
+      "i": 14,
+      "id": 1
+    }
+  ]
 }
